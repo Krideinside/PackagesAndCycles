@@ -19,9 +19,9 @@ public class RestServiceTest {
     //     System.out.println("Кол-во месяцев для отдыха: " + count);
 
     @ParameterizedTest
-   // @CsvSource({
-   //         "10000, 3000, 20000",
-   //         "100000, 60000, 150000"
+    // @CsvSource({
+    //         "10000, 3000, 20000",
+    //         "100000, 60000, 150000"
 //})
     @CsvFileSource(files = "src/test/resources/data.csv")
     void cauntRest(int income, int expenses, int threshold) {
